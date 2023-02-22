@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $body = "Name: $name\nEmail: $email\nMessage: $message";
   
   if (mail($to, $subject, $body)) {
-    echo "Thank you for contacting us!";
+    echo "Thank you for contacting me!";
   } else {
     echo "There was a problem sending your message. Please try again later.";
   }
