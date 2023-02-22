@@ -60,16 +60,14 @@
 		</section>
 		<section id="contact">
   <h2>Contact</h2>
-  <form method="post" action="send_email.php">
+  <form method="POST" action="/contact.py">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" required>
-
     <label for="email">Email</label>
     <input type="email" id="email" name="email" required placeholder="Email">
-
     <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea><br><br>
-
+    <textarea id="message" name="message" required></textarea>
+    <br><br>
     <input type="submit" value="Submit">
   </form>
 </section>
