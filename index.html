@@ -2,12 +2,142 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buraleh &amp; Co - Real-Estate Marketing Agency</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- include the particle.js library -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<title>Buraleh &amp; Co</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Load particle.js library -->
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<!-- Load FontAwesome library -->
+	<script src="https://kit.fontawesome.com/5a5c5d5e5f.js"></script><meta charset="utf-8">
+	<title>Video Background Example</title>
+	<style>
+		#video-background {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			z-index: -1;
+		}
+		#video-foreground {
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+		}
+		.content {
+			position: relative;
+			z-index: 1;
+			padding: 50px;
+			text-align: center;
+			color: #fff;
+			font-size: 2em;
+			font-weight: bold;
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		h1, h2 {
+			color: #FF6584;
+			margin: 0;
+		}
+		h1 {
+			font-size: 3em;
+		}
+		h2 {
+			font-size: 2em;
+		}
+		main {
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		section {
+			margin-bottom: 50px;
+			width: 100%;
+			max-width: 800px;
+			text-align: center;
+			padding: 50px;
+			border-radius: 10px;
+		}
+		section#about {
+			background: linear-gradient(to right, #8B5CF6, #FF6584);
+			color: #fff;
+		}
+		section#services {
+			background: linear-gradient(to bottom right, #9C27B0, #673AB7);
+			color: #fff;
+		}
+		section#services ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		section#services li {
+			background-color: rgba(255, 255, 255, 0.5);
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+			width: 300px;
+			text-align: center;
+		}
+		section#testimonials {
+			background-color: #f7f7f7;
+			padding: 50px;
+		}
+		section#testimonials h2 {
+			color: #333;
+		}
+		blockquote {
+			border-left: 5px solid #FF6584;
+			padding-left: 20px;
+			font-style: italic;
+		}
+		cite {
+			display: block;
+			margin-top: 10px;
+			font-weight: bold;
+		}
+		section#contact {
+			background-color: #333;
+			color: #fff;
+			padding: 50px;
+		}
+		section#contact .container {
+			display: flex;
+			justify-content: center;
+		}
+		section#contact .contact-info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		section#contact p {
+			margin: 0;
+		}
+		footer {
+			background-color: #f7f7f7;
+			padding: 20px;
+			text-align: center;
+		}
+		footer p {
+			margin: 0;
+		}
+	</style>
 </head>
 
 <body>
@@ -16,15 +146,19 @@
         <h2>Real Estate Marketing Agency</h2>
         <!-- add the particles container -->
         <div id="particles-js"></div>
+      <div id="video-background">
+		<iframe id="video-foreground" src="https://www.youtube.com/embed/y9j-BL5ocW8?autoplay=1&loop=1&controls=0&showinfo=0&autohide=1&mute=1&playlist=y9j-BL5ocW8" frameborder="0" allowfullscreen></iframe>
+	</div>
     </header>
 		<main>
           <div style="display: flex; justify-content: center;">
-  <section id="about">
-    <h2>About Us</h2>
-    <p style="background: linear-gradient(to right, #8B5CF6, #FF6584); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-      Buraleh &amp; Co is a real estate marketing agency that began with humble beginnings in Ottawa in 2020. Since then, we have expanded our services all over Canada. Our team of experts specialize in creating high-quality marketing materials for real estate properties to help our clients achieve their goals. We are dedicated to providing reliable and professional services that exceed expectations. Contact us today to learn more about how we can help you.
-    </p>
-  </section>
+   <section id="about" style="background: linear-gradient(to right, #8B5CF6, #FF6584);">
+  <h2>About Us</h2>
+  <p>
+    Buraleh &amp; Co is a real estate marketing agency that began with humble beginnings in Ottawa in 2020. Since then, we have expanded our services all over Canada. Our team of experts specialize in creating high-quality marketing materials for real estate properties to help our clients achieve their goals. We are dedicated to providing reliable and professional services that exceed expectations. Contact us today to learn more about how we can help you.
+  </p>
+</section>
+
 </div>
 			<section id="services" style="background: linear-gradient(to bottom right, #9C27B0, #673AB7); color: #fff;">
     <h2>Services</h2>
@@ -51,7 +185,6 @@
         </li>
     </ul>
 </section>
-
 			<section id="testimonials">
 				<h2>Testimonials</h2>
 				<blockquote>
@@ -79,8 +212,8 @@
 	    
 </main>
 
-<footer>
-	<p>&copy; Buraleh & Co. All rights reserved 2023.</p>
+<footer style="background-color: black;">
+	<p style="color: white;">&copy; Buraleh &amp; Co. All rights reserved 2023.</p>
 </footer>
 	<script>
             particlesJS("particles-js", {
@@ -195,4 +328,3 @@
         </script>
 </body>
 </html>
-
