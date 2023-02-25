@@ -1,235 +1,150 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 header {
-    position: relative;
-    height: 100vh;
-    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 header h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 header h2 {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 nav {
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 nav a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #667eea;
+  color: #667eea;
 }
 
 main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 section h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 section p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 section ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 section li {
-    width: calc(33.33% - 1rem);
-    background-color: #f7f7f7;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
+  width: calc(33.33% - 1rem);
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
 section li:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 section a {
-    color: #667eea;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 section a:hover {
-    color: #764ba2;
+  color: #764ba2;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
 
 #particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contact label {
-    margin-top: 20px;
-    font-weight: bold;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 #contact input[type="text"],
 #contact input[type="email"],
 #contact textarea {
-    border: none;
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    font-size: 16px;
-    font-family: inherit;
-    background-color: #f5f5f5;
-}
-
-#contact input[type="text"]:focus,
-#contact input[type="email"]:focus,
-#contact textarea:focus {
-    outline: none;
-    background-color: #ffffff;
-}
-
-#contact input[type="submit"] {
-    border: none;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #0095ff;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-#contact input[type="submit"]:hover {
-    background-color: #0077cc;
-}
-
-document.querySelector('#contact form').addEventListener('submit', function(e) {
-        e.preventDefault(); // Prevent the form from submitting
-
-        // Get the form data
-        var name=document.querySelector('#contact form input[name="name"]').value;
-        var email=document.querySelector('#contact form input[name="email"]').value;
-        var message=document.querySelector('#contact form textarea[name="message"]').value;
-
-        // Send the form data to the server
-        var xhr=new XMLHttpRequest();
-        xhr.open('POST', 'send_email.php', true);
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
-        xhr.onreadystatechange=function() {
-            if (xhr.readyState===4 && xhr.status===200) {
-                if (xhr.responseText==='success') {
-                    alert('Your message has been sent successfully.');
-                }
-
-                else {
-                    alert('An error occurred while sending your message.');
-                }
-            }
-        }
-
-        ;
-        xhr.send('name='+ encodeURIComponent(name) + '&email='+ encodeURIComponent(email) + '&message='+ encodeURIComponent(message));
-    }
-
-);
-
-.logos-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-}
-
-.logo {
-    margin: 10px;
-    position: relative;
-}
-
-.logo img {
-    width: 100px;
-    height: 100px;
-}
-
-.logo:hover {
-    top: -10px;
-}
-
-.company-names {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+  border: none;
+  padding: 10px;
+ 
 }
