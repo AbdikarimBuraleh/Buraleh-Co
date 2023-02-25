@@ -5,7 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buraleh & Co - Real-Estate Marketing Agency</title>
   <link rel="stylesheet" href="style.css"><!-- include the particle.js library -->
-
+<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		#navbar {
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		#navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			display: flex;
+			justify-content: space-around;
+		}
+		#navbar li {
+			float: left;
+		}
+		#navbar li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		#navbar li a:hover {
+			background-color: #111;
+		}
+		#about {
+			background-color: #f2f2f2;
+		}
+		#services {
+			background-color: #ccc;
+		}
+		#testimonials {
+			background-color: #999;
+		}
+		#contact {
+			background-color: #666;
+			color: white;
+		}
+	</style>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
                 body {
@@ -157,6 +204,14 @@ window.addEventListener("DOMContentLoaded", function() {
 </script>
   </header>
   <main>
+    <div id="navbar">
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
     <div style="display: flex; justify-content: center;">
       <section id="about" style="background: linear-gradient(to right, #8B5CF6, #FF6584);">
         <h2>About Us</h2>
