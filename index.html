@@ -1,278 +1,307 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11103508714"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-11103508714');
-</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buraleh & Co. - Real-Estate Marketing Agency</title>
-  <link rel="stylesheet" href="style.css"><!-- include the particle.js library -->
-<style>
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: Arial, sans-serif;
-		}
-		#navbar {
-			background-color: #333;
-			position: fixed;
-			top: 0;
-			width: 100%;
-			z-index: 1;
-		}
-		#navbar ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			display: flex;
-			justify-content: space-around;
-		}
-		#navbar li {
-			float: left;
-		}
-		#navbar li a {
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
-		#navbar li a:hover {
-			background-color: #111;
-		}
-		#about {
-			background-color: #f2f2f2;
-		}
-		#services {
-			background-color: #ccc;
-		}
-		#testimonials {
-			background-color: #999;
-		}
-		#contact {
-			background-color: #666;
-			color: white;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buraleh &amp; Co. - Real Estate Marketing Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11103508714"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-11103508714');
+    </script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <style>
-                body {
-                        font-family: Arial, sans-serif;
-                        margin: 0;
-                        padding: 0;
-                }
-                header {
-                        background-color: #fff;
-                        padding: 20px;
-                        text-align: center;
-                }
-                h1, h2 {
-                        color: #FF6584;
-                        margin: 0;
-                }
-                h1 {
-                        font-size: 3em;
-                }
-                h2 {
-                        font-size: 2em;
-                }
-                main {
-                        padding: 50px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                }
-                section {
-                        margin-bottom: 50px;
-                        width: 100%;
-                        max-width: 800px;
-                        text-align: center;
-                        padding: 50px;
-                        border-radius: 10px;
-                }
-                section#about {
-                        background: linear-gradient(to right, #8B5CF6, #FF6584);
-                        color: #fff;
-                }
-                section#services {
-                        background: linear-gradient(to bottom right, #9C27B0, #673AB7);
-                        color: #fff;
-                }
-                section#services ul {
-                        list-style: none;
-                        padding: 0;
-                        margin: 0;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                }
-                section#services li {
-                        background-color: rgba(255, 255, 255, 0.5);
-                        padding: 10px;
-                        margin: 10px;
-                        border-radius: 5px;
-                        width: 300px;
-                        text-align: center;
-                }
-                section#testimonials {
-                        background-color: #f7f7f7;
-                        padding: 50px;
-                }
-                section#testimonials h2 {
-                        color: #333;
-                }
-                blockquote {
-                        border-left: 5px solid #FF6584;
-                        padding-left: 20px;
-                        font-style: italic;
-                }
-                cite {
-                        display: block;
-                        margin-top: 10px;
-                        font-weight: bold;
-                }
-                section#contact {
-                        background-color: #333;
-                        color: #fff;
-                        padding: 50px;
-                }
-                section#contact .container {
-                        display: flex;
-                        justify-content: center;
-                }
-                section#contact .contact-info {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                }
-                section#contact p {
-                        margin: 0;
-                }
-                footer {
-                        background-color: #f7f7f7;
-                        padding: 20px;
-                        text-align: center;
-                }
-                footer p {
-                        margin: 0;
-                }
-  </style>
 </head>
 <body>
-  <header>
-    <h1>Buraleh & Co.</h1>
-    <h2>Real Estate Marketing Agency</h2>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">Buraleh &amp; Co.</a>
+            <ul class="nav-menu">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+  <style>
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -.9;
+    top: 0;
+    left: 0;
+  }
+
+  .hero-content {
+    z-index: 1;
+  }
+</style>
+   <header class="hero-section">
+  <div style="text-align: center;">
+    <div class="hero-content">      
+        <h1 class="hero-title">Sell Your Home with Ease</h1>
+        <p class="hero-subtitle">We Guarantee Potential Leads!</p>
+        <a href="#contact" class="button">Get Started</a>
+    </div>
     <div id="particles-js"></div>
-    <p><strong>Sell your home with ease, We guarantee potential leads!</strong></p>
-    <style>
-#video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
-}
+  </div> 
+</header>
+    <main>
+        <section id="about" style="background: linear-gradient(to right, #f0f0f0, #cfcfcf);">
+  <div class="container">
+    <div style="text-align: center;">
+      <br/>
+      <h2 class="section-title" style="background: linear-gradient(to right, #8B5CF6, #FF6584); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">About Us</h2>
+      <p class="section-description" style="background: linear-gradient(to right, #8B5CF6, #FF6584); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Buraleh &amp; Co. is a real estate marketing agency based in Ottawa, Canada, that serves sellers across the country. We specialize in creating effective and customized marketing campaigns that showcase your property's unique features and attract potential buyers. Our team of experts includes photographers, videographers, and social media specialists who work together to deliver high-quality services tailored to your needs.</p>
+      <br/>
+    </div>
+  </div>
+</section>
+        <section id="services" style="border: 2px solid white; padding: 40px; background: linear-gradient(to bottom, #8B5CF6, #FF6584);">
+  <div class="container">
+    <div style="text-align: center;">
+                <br/>
+    <h2 style="color: white; text-shadow: 2px 2px 2px #8B5CF6;">Our Services</h2>
+       </div>
+    <ul>
+      <li>
+        <div class="service-icon">
+          <i class="fas fa-home"></i>
+        </div>
+        <div class="service-content">
+          <h3 style="color: white; text-shadow: 2px 2px 2px #8B5CF6;">Real Estate Listings</h3>
+          <p style="color: white; text-shadow: 2px 2px 2px #8B5CF6;">We help you list your property for sale or rent on our website, as well as other popular real estate platforms, to reach a wider audience and increase your chances of finding a buyer or tenant.</p>
+        </div>
+      </li>
+      <li>
+        <div class="service-icon">
+          <i class="fas fa-camera"></i>
+        </div>
+        <div class="service-content">
+          <h3 style="color: white; text-shadow: 2px 2px 2px #8B5CF6;">Virtual Tours</h3>
+          <p style="color: white; text-shadow: 2px 2px 2px #8B5CF6;">Our virtual tours allow potential buyers to explore your property from the comfort of their own home, saving them time and increasing their interest. Our team uses the latest technology to create immersive and interactive virtual tours that showcase your property in the best possible way.</p>
+        </div>
+      </li>
+      <li>
+        <div class="service-icon">
+          <i class="fas fa-money-bill"></i>
+        </div>
+        <div class="service-content">
+          <h3 style="color: white; text-shadow: 2px 2px 2px #8B5CF6;">SEO Marketing</h3>
+          <p style="color: white; text-shadow: 2px 2px 2px #8B5CF6;">At our real estate marketing agency, we provide comprehensive SEO services to improve your listings' visibility on search engines. Our expert team will optimize your listings with targeted keywords and drive more qualified leads to your properties.</p>
+        </div>
+      </li>
+      <li>
+        <div class="service-icon">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <div class="service-content">
+          <h3 style="color: white; text-shadow: 2px 2px 2px #8B5CF6;">Real Estate Consulting</h3>
+          <p style="color: white; text-shadow: 2px 2px 2px #8B5CF6;">Our team of experienced real estate consultants provides expert advice and guidance to help you make informed decisions about your real estate investments. Whether you're a first-time buyer or an experienced investor, we're here to help you achieve your real estate goals.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="testimonials">
+  <div style="text-align: center;">
+    <h2 style="color: white; font-weight: bold; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">Testimonials</h2>
+    <blockquote style="border: 2px solid white; padding: 20px; color: white;">
+      <p>"I highly recommend Buraleh & Co to anyone looking for high-quality real estate marketing services in Ottawa. They are reliable, professional, and deliver results that exceed expectations."</p>
+      <cite>Richard Mayfield, Real Estate Agent</cite>
+    </blockquote>
+    <br>
+    <blockquote style="border: 2px solid white; padding: 20px; color: white;">
+      <p>"The team at Buraleh & Co generated potential leads that helped me sell my house in record time in Vancouver. Their marketing strategies and materials were top-notch."</p>
+      <cite>Stephanie Hill, Homeowner</cite>
+    </blockquote>
+  </div>
+</section>
+  <div style="display: flex; justify-content: center; background-color: white;">
+     <div style="text-align: center;">
+  <section id="about" style="background-color: #F7F7F7;">
+    <br/>
+    <h2 style="text-align: center; background: linear-gradient(to right, #8B5CF6, #FF6584); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Our Mission</h2>
+    <p style="background: linear-gradient(to right, #8B5CF6, #FF6584); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Welcome to Buraleh &amp; Co, we are a premier real estate marketing agency based in Ottawa, Canada. Our passion for helping sellers achieve their goals led us to expand our services across Canada. Our team of experts specialized in creating high-quality and customized marketing materials that showcased the unique features of your property and attracted potential buyers.</p>
+    <br>
+    <p style="background: linear-gradient(to right, #8B5CF6, #FF6584); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">At Buraleh &amp; Co, we pride ourselves on our commitment to building long-term relationships with our clients. We understand the importance of trust, reliability, and professionalism when it comes to marketing your property, and we strive to exceed your expectations every step of the way.</p>
+    <br>
+    <p style="background: linear-gradient(to right, #8B5CF6, #FF6584); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">What sets us apart is our focus on delivering high-quality services that are tailored to your needs. We understand that every property is unique, and we take the time to listen to your goals and concerns to create a customized marketing plan that will help you achieve success. Our team of experts is dedicated to providing you with the support and guidance you need to make informed decisions about your property.</p>
+    <br>
+    <p style="background: linear-gradient(to right, #8B5CF6, #FF6584); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">We guarantee to provide you with potential leads and work tirelessly to ensure that you get the results you deserve. Contact us today to learn more about how we can help you showcase your property and attract potential buyers. Let Buraleh &amp; Co be your partner in success.</p>
+    <br/>
+</section>
+    </div>
+</div>
+      <section id="contact">
+  <style>
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
 
-#video-foreground {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 150%; /* change this value to stretch the video vertically */
-  width: auto;
-  height: auto;
-  transform: translateX(-50%) translateY(-50%);
-}
+    #video-foreground {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 150%; /* change this value to stretch the video vertically */
+      width: auto;
+      height: auto;
+      transform: translateX(-50%) translateY(-50%);
+    }
 
-@media screen and (max-aspect-ratio: 1920/1080) {
-  #video-foreground {
+    @media screen and (max-aspect-ratio: 1920/1080) {
+      #video-foreground {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <div id="video-background">
+    <iframe id="video-foreground" src="https://www.youtube.com/embed/y9j-BL5ocW8?autoplay=1&amp;loop=1&amp;controls=0&amp;playsinline=1&amp;mute=1&amp;playlist=y9j-BL5ocW8&amp;start=30&amp;end=60&amp;modestbranding=1&amp;showinfo=0&amp;iv_load_policy=3" frameborder="0" allowfullscreen name="video-foreground"></iframe>
+  </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      var iframe = document.getElementById("video-foreground");
+      iframe.setAttribute("src", iframe.getAttribute("src"));
+      iframe.addEventListener("ended", function() {
+        iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+      });
+    });
+  </script>
+
+  <div class="container">
+    <div style="text-align: center;">
+    <h2 class="section-title">Contact Us</h2>
+    <form action="https://formspree.io/f/xpzerabv" method="POST" id="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required rows="5"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="button">Send Message</button>
+      </div>
+    </form>
+  </div>
+
+  <style>
+    #contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    label {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      border: none;
+      border-radius: 5px;
+      font
+
+
+<style>
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
     width: 100%;
   }
-}
+
+  label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #333;
+  }
+
+  button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+  }
+
+  button:hover {
+    background-color: #555;
+  }
 </style>
 
-<div id="video-background">
-  <iframe id="video-foreground" src="https://www.youtube.com/embed/y9j-BL5ocW8?autoplay=1&amp;loop=1&amp;controls=0&amp;playsinline=1&amp;mute=1&amp;playlist=y9j-BL5ocW8&amp;start=60&amp;modestbranding=1&amp;showinfo=0&amp;iv_load_policy=3" frameborder="0" allowfullscreen name="video-foreground"></iframe>
-</div>
-
-<script>
-window.addEventListener("DOMContentLoaded", function() {
-  var iframe = document.getElementById("video-foreground");
-  iframe.setAttribute("src", iframe.getAttribute("src"));
-});
-</script>
-  </header>
-  <main>
-    <div id="navbar">
-	<ul>
-		<li><a href="#about"><b>About</b></a></li>
-		<li><a href="#services"><b>Services</b></a></li>
-		<li><a href="#testimonials"><b>Testimonials</b></a></li>
-		<li><a href="#contact"><b>Contact</b></a></li>
-	</ul>
-</div>
-    <section id="services" style="background: linear-gradient(to bottom right, #9C27B0, #673AB7); color: #fff;">
-      <h2>Services</h2>
-      <ul>
-        <li style="background-color: rgba(255, 255, 255, 0.5); padding: 10px;">Professional photography of real estate properties<br>
-        <strong>$500 - $1000/Month</strong></li>
-        <li style="background-color: rgba(255, 255, 255, 0.5); padding: 10px;">Virtual tours of properties<br>
-        <strong>$1000 - $2000/Month</strong></li>
-        <li style="background-color: rgba(255, 255, 255, 0.5); padding: 10px;">Print and digital marketing materials<br>
-        <strong>$1000 - $2000/Month</strong></li>
-        <li style="background-color: rgba(255, 255, 255, 0.5); padding: 10px;">SEO Social media marketing<br>
-        <strong>$1500 - $2000/Month</strong></li>
-        <li style="background-color: rgba(255, 255, 255, 0.5); padding: 10px;">Email marketing campaigns<br>
-        <strong>$500 - $1000/Month</strong></li>
-      </ul>
-    </section>
-    <section id="testimonials">
-      <h2>Testimonials</h2>
-      <blockquote>
-        <p>"I highly recommend Buraleh & Co to anyone looking for high-quality real estate marketing services in Ottawa. They are reliable, professional, and deliver results that exceed expectations."</p><cite>Richard Mayfield, Real Estate Agent</cite>
-      </blockquote><br>
-      <blockquote>
-        <p>"The team at Buraleh & Co generated potential leads that helped me sell my house in record time in Vancouver. Their marketing strategies and materials were top-notch."</p><cite>Stephanie Hill, Homeowner</cite>
-      </blockquote>
-    </section>
-	  <div style="display: flex; justify-content: center;">
-      <section id="about" style="background: linear-gradient(to right, #8B5CF6, #FF6584);">
-        <h2>About Us</h2>
-        <p>Welcome to Buraleh & Co, a premier real estate marketing agency based in Ottawa, Canada. Our passion for helping sellers achieve their goals led us to expand our services across Canada. Our team of experts specializes in creating high-quality and customized marketing materials that showcase the unique features of your property and attract potential buyers.</p>
-<br>
-<p>At Buraleh & Co, we pride ourselves on our commitment to building long-term relationships with our clients. We understand the importance of trust, reliability, and professionalism when it comes to marketing your property, and we strive to exceed your expectations every step of the way.</p>
-<br>
-<p>What sets us apart is our focus on delivering high-quality services that are tailored to your needs. We understand that every property is unique, and we take the time to listen to your goals and concerns to create a customized marketing plan that will help you achieve success. Our team of experts is dedicated to providing you with the support and guidance you need to make informed decisions about your property.</p>
-<br>
-<p>We guarantee to provide you with potential leads and work tirelessly to ensure that you get the results you deserve. Contact us today to learn more about how we can help you showcase your property and attract potential buyers. Let Buraleh & Co be your partner in success.</p>
-      </section>
-    </div>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <div style="text-align: center;">
-        <div class="container">
-          <div class="contact-info">
-   <p><a href="tel:+13432024734">+1 (343) 202-4734</a></p>
-   <p><a href="mailto:Buralehandco@gmail.com">Buralehandco@gmail.com</a></p>
-</div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer style="background-color: black;">
+<!-- Footer -->
+    <div style="text-align: center;">
+<footer style="background-color: black;">
     <p style="color: white;">© Buraleh & Co. All rights reserved 2023.</p>
+ 
   </footer>
-  <script>
+      </div>
+    <script>
             particlesJS("particles-js", {
                 "particles": {
                     "number": {
@@ -383,5 +412,9 @@ window.addEventListener("DOMContentLoaded", function() {
                 "retina_detect": true
             });
   </script>
-</body>
-</html>
+<!-- Particles.js -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS.load('particles-js', 'particles.json');
+</script>
+    
