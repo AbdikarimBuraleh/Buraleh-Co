@@ -167,26 +167,26 @@
 </div>
 
 <div style="text-align: center;">
-  <h2 class="section-title" style="color: black;">Contact Us</h2>
+  <h2 class="section-title">Contact Us</h2>
   <form action="https://formspree.io/f/xpzerabv" method="POST" id="contact-form">
     <div class="form-group">
-      <label for="name" style="color: black;">Name</label>
-      <input type="text" id="name" name="name" style="color: black;" required>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
     </div>
     <div class="form-group">
-      <label for="email" style="color: black;">Email</label>
-      <input type="email" id="email" name="email" style="color: black;" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
     </div>
     <div class="form-group">
-      <label for="phone" style="color: black;">Phone</label>
-      <input type="tel" id="phone" name="phone" style="color: black;">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone">
     </div>
     <div class="form-group">
-      <label for="message" style="color: black;">Message</label>
-      <textarea id="message" name="message" style="color: black;" required rows="5"></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required rows="5"></textarea>
     </div>
     <div class="form-group">
-      <button type="submit" class="button" style="background: linear-gradient(to bottom right, #a21d84, #ff7bac);">Send Message</button>
+      <button type="submit" class="button">Send Message</button>
     </div>
   </form>
 </div>
@@ -227,6 +227,7 @@
     color: black;
     background-color: #f2f2f2;
     margin-bottom: 0.5rem;
+    text-shadow: none;
   }
 
   input[type="text"]:focus,
@@ -253,10 +254,11 @@
     background-image: linear-gradient(to bottom right, #9e50c4, #e667af);
   }
 
-  label {
+  .form-group label {
     color: white;
     font-weight: bold;
     margin-bottom: 0.25rem;
+    text-shadow: none;
   }
 
   ::placeholder {
