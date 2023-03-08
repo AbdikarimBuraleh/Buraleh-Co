@@ -166,135 +166,82 @@
   <iframe id="video-foreground" src="https://www.youtube.com/embed/BNTs6-pNFRk?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1&amp;modestbranding=1&amp;showinfo=0&amp;iv_load_policy=3&amp;playlist=BNTs6-pNFRk" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="container">
-  <div style="text-align: center;">
-    <h2 class="section-title" style="color: white;">Contact Us</h2>
-    <form action="https://formspree.io/f/xpzerabv" method="POST" id="contact-form">
-      <div class="form-group">
-        <label for="name" style="color: white;">Name</label>
-        <input type="text" id="name" name="name" style="border: none; color: black;" required>
-      </div>
-      <div class="form-group">
-        <label for="email" style="color: white;">Email</label>
-        <input type="email" id="email" name="email" style="border: none; color: black;" required>
-      </div>
-      <div class="form-group">
-        <label for="phone" style="color: white;">Phone</label>
-        <input type="tel" id="phone" name="phone" style="border: none; color: black;">
-      </div>
-      <div class="form-group">
-        <label for="message" style="color: white;">Message</label>
-        <textarea id="message" name="message" style="color: black; border: none;" required rows="5"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="button">Send Message</button>
-      </div>
-    </form>
-  </div>
-
-  <style>
-    #contact-form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 1.5rem;
-      max-width: 500px;
-      width: 100%;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    textarea {
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      padding: 0.5rem;
-      width: 100%;
-      color: black;
-    }
-
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="tel"]:focus,
-    textarea:focus {
-      outline: none;
-      box-shadow: 0 0 0 2px #333;
-    }
-
-    button {
-      background-color: #333;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      cursor: pointer;
-      font-size: 1rem;
-      padding: 0.5rem 1.5rem;
-      text-transform: uppercase;
-      transition: background-color 0.2s ease;
-    }
-
-    button:hover {
-      background-color: #555;
-    }
-  </style>
+<div style="text-align: center;">
+  <h2 class="section-title" style="color: white;">Contact Us</h2>
+  <form action="https://formspree.io/f/xpzerabv" method="POST" id="contact-form">
+    <div class="form-group">
+      <label for="name" style="color: white;">Name</label>
+      <input type="text" id="name" name="name" style="border: none; color: black;" required>
+    </div>
+    <div class="form-group">
+      <label for="email" style="color: white;">Email</label>
+      <input type="email" id="email" name="email" style="border: none; color: black;" required>
+    </div>
+    <div class="form-group">
+      <label for="phone" style="color: white;">Phone</label>
+      <input type="tel" id="phone" name="phone" style="border: none; color: black;">
+    </div>
+    <div class="form-group">
+      <label for="message" style="color: white;">Message</label>
+      <textarea id="message" name="message" style="color: black; border: none;" required rows="5"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="button">Send Message</button>
+    </div>
+  </form>
 </div>
 
-    #contact-form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+<style>
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 1.5rem;
-      max-width: 500px;
-      width: 100%;
-    }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    width: 100%;
+  }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    textarea {
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      padding: 0.5rem;
-      width: 100%;
-      color: black;
-    }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    color: black;
+  }
 
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="tel"]:focus,
-    textarea:focus {
-      outline: none;
-      box-shadow: 0 0 0 2px #333;
-    }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #333;
+  }
 
-    button {
-      background-color: #333;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      cursor: pointer;
-      font-size: 1rem;
-      padding: 0.5rem 1.5rem;
-      text-transform: uppercase;
-      transition: background-color 0.2s ease;
-    }
+  button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+  }
 
-    button:hover {
-      background-color: #555;
-    }
-  </style>
+  button:hover {
+    background-color: #555;
+  }
+</style>
 
 <!-- Footer -->
     <div style="text-align: center;">
