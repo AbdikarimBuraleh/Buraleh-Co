@@ -120,59 +120,37 @@
             </section>
         </div>
     </div>
-    <section id="contact">
-        <style>
-            #video-background {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                z-index: -1;
-                 object-fit: cover;
-            }
+   <section id="contact">
+    <style>
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
 
+        #video-foreground {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-aspect-ratio: 1920/1080) {
             #video-foreground {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                min-width: 100%;
-                min-height: 150%;
-                width: auto;
-                height: auto;
-                transform: translateX(-50%) translateY(-50%);
+                width: 100%;
             }
+        }
+    </style>
 
-            @media screen and (max-aspect-ratio: 1920/1080) {
-                #video-foreground {
-                    width: 100%;
-                }
-            }
-        </style>
-
-        <div id="video-background">
-    <iframe id="video-foreground" src="https://www.youtube.com/embed/da5x-__kvGY?autoplay=1&loop=1&controls=0&mute=1&playlist=da5x-__kvGY" frameborder="0" allowfullscreen></iframe>
-        </div>
-<style>
-    #video-background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        z-index: -1;
-    }
-
-    #video-foreground {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-</style>
+    <div id="video-background">
+        <iframe id="video-foreground" src="https://www.youtube.com/embed/da5x-__kvGY?autoplay=1&start=37&end=149&loop=1&controls=0&mute=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
 
 
         <div style="text-align: center;">
