@@ -1,196 +1,64 @@
-// Fetch company names from logo data attributes and display them
-const logoDivs = document.querySelectorAll('.logo');
-const companyNamesDiv = document.querySelector('.company-names');
+document.addEventListener('DOMContentLoaded', function () {
+    // Handle smooth scrolling for anchor links
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
 
-logoDivs.forEach((logoDiv) => {
-    const companyName = logoDiv.getAttribute('data-name');
-    const companyNameDiv = document.createElement('div');
-    companyNameDiv.innerText = companyName;
-    companyNamesDiv.appendChild(companyNameDiv);
-});
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
 
-// Submit form data via AJAX when the form is submitted
-const form = document.getElementById("contact-form");
-
-form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-  
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const message = document.getElementById("message").value;
-  
-    const data = {
-        name,
-        email,
-        phone,
-        message
-    };
-  
-    try {
-        const response = await fetch("https://formspree.io/f/xpzerabv", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
+            if (targetElement) {
+                const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
         });
+    });
 
-        if (response.ok) {
-            alert("Message sent successfully!");
-            form.reset();
-        } else {
-            throw new Error("Failed to send message.");
-        }
-    } catch (error) {
-        alert("There was a problem sending your message. Please try again.");
+    // Handle form submission
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Here you can add code to handle form submission, e.g., sending data to a server
+            alert('Form submitted successfully!');
+        });
     }
-});
 
-// Modal functionality
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("start-button");
-const span = document.getElementsByClassName("close")[0];
+    // Handle modal functionality
+    const modal = document.getElementById('myModal');
+    const modalBtn = document.getElementById('start-button');
+    const modalCloseBtn = document.getElementsByClassName('close')[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-document.addEventListener('DOMContentLoaded', function () {
-    const videoThumbnails = document.querySelectorAll('.video-thumbnail');
-    
-    videoThumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('mouseover', function () {
-            const newVideoId = this.dataset.video;
-            const videoIframe = document.getElementById('video-foreground');
-            videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1`;
-        });
-    });
-});
-document.addEventListener('DOMContentLoaded', function () {
-    const videoThumbnails = document.querySelectorAll('.video-thumbnail');
-    
-    videoThumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('click', function () {
-            const newVideoId = this.dataset.video;
-            const videoIframe = document.getElementById('video-foreground');
-            videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1&start=15&end=35&loop=1`;
-        });
-    });
-});
-document.addEventListener('DOMContentLoaded', function () {
-    const videoOverlay = document.getElementById('video-overlay');
-    const newVideoId = videoOverlay.dataset.video;
-    const videoIframe = document.getElementById('video-foreground');
-
-    videoOverlay.addEventListener('click', function () {
-        videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1&start=15&end=35&loop=1`;
-    });
-});
-// Fetch company names from logo data attributes and display them
-const logoDivs = document.querySelectorAll('.logo');
-const companyNamesDiv = document.querySelector('.company-names');
-
-logoDivs.forEach((logoDiv) => {
-    const companyName = logoDiv.getAttribute('data-name');
-    const companyNameDiv = document.createElement('div');
-    companyNameDiv.innerText = companyName;
-    companyNamesDiv.appendChild(companyNameDiv);
-});
-
-// Submit form data via AJAX when the form is submitted
-const form = document.getElementById("contact-form");
-
-form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-  
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const message = document.getElementById("message").value;
-  
-    const data = {
-        name,
-        email,
-        phone,
-        message
-    };
-  
-    try {
-        const response = await fetch("https://formspree.io/f/xpzerabv", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
-
-        if (response.ok) {
-            alert("Message sent successfully!");
-            form.reset();
-        } else {
-            throw new Error("Failed to send message.");
+    if (modalBtn && modalCloseBtn) {
+        modalBtn.onclick = function () {
+            modal.style.display = "block";
         }
-    } catch (error) {
-        alert("There was a problem sending your message. Please try again.");
+
+        modalCloseBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
     }
-});
 
-// Modal functionality
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("start-button");
-const span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-document.addEventListener('DOMContentLoaded', function () {
+    // Handle video functionality
     const videoThumbnails = document.querySelectorAll('.video-thumbnail');
-    
-    videoThumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('mouseover', function () {
-            const newVideoId = this.dataset.video;
-            const videoIframe = document.getElementById('video-foreground');
-            videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1`;
-        });
-    });
-});
-document.addEventListener('DOMContentLoaded', function () {
-    const videoThumbnails = document.querySelectorAll('.video-thumbnail');
-    
-    videoThumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('click', function () {
-            const newVideoId = this.dataset.video;
-            const videoIframe = document.getElementById('video-foreground');
-            videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1&start=15&end=35&loop=1`;
-        });
-    });
-});
-document.addEventListener('DOMContentLoaded', function () {
-    const videoOverlay = document.getElementById('video-overlay');
-    const newVideoId = videoOverlay.dataset.video;
-    const videoIframe = document.getElementById('video-foreground');
 
-    videoOverlay.addEventListener('click', function () {
-        videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1&start=15&end=35&loop=1`;
-    });
+    if (videoThumbnails) {
+        videoThumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function () {
+                const newVideoId = this.dataset.video;
+                const videoIframe = document.getElementById('video-foreground');
+                videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1&start=15&end=35&loop=1`;
+            });
+        });
+    }
 });
