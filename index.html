@@ -5,55 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webstate - Premium Real Estate Web Design</title>
     <link rel="stylesheet" href="style.css">
-    <style>.video-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.video-foreground {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Transparent */
-    z-index: 1;
-}
-</style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11103508714"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-11103508714');
-    </script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="#" class="logo">Webstate</a>
+            <a href="#" class="logo" data-name="Webstate">Webstate</a>
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -63,37 +19,25 @@
         </div>
     </nav>
     <header class="hero-section">
-        <div style="text-align: center;">
-            <div class="hero-content">
-                <h1 class="hero-title">Premium Real Estate Web Design</h1>
-                <p class="hero-subtitle">Crafting Stunning Online Experiences for Real Estate Professionals</p>
-            </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Premium Real Estate Web Design</h1>
+            <p class="hero-subtitle">Crafting Stunning Online Experiences for Real Estate Professionals</p>
         </div>
-        <div id="particles-js"></div>
     </header>
     <main>
         <section id="about" class="section-about">
             <div class="container">
-                <div style="text-align: center;">
-                    <br/>
-                    <div class="hero-content">
-                        <h2 class="section-title-about">About Us</h2>
-                        <p class="section-description-about">Webstate is a cutting-edge real estate web design agency dedicated to helping real estate professionals establish a strong online presence. Our mission is to create visually captivating websites that drive engagement and convert visitors into clients.</p>
-                    </div>
-                    <br/>
+                <div class="hero-content">
+                    <h2 class="section-title-about">About Us</h2>
+                    <p class="section-description-about">Webstate is a cutting-edge real estate web design agency dedicated to helping real estate professionals establish a strong online presence. Our mission is to create visually captivating websites that drive engagement and convert visitors into clients.</p>
                 </div>
             </div>
         </section>
         <section id="services" class="section-services">
-    <div class="container">
-        <div style="text-align: center;">
-            <br />
-            <h2 class="section-title-services">Our Packages</h2>
-        </div>
-        <div class="package-container">
-            <!-- Starter Package -->
-            <div class="package">
-                <div class="package">
+            <div class="container">
+                <h2 class="section-title-services">Our Packages</h2>
+                <div class="package-container">
+                    <div class="package">
                         <h3 class="package-title">Starter Package</h3>
                         <p class="package-description">Ideal for new real estate agents or small agencies.</p>
                         <ul class="package-features">
@@ -104,10 +48,7 @@
                         <p class="package-price">$1000</p>
                         <button class="package-button">Get Started</button>
                     </div>
-            </div>
-            <!-- Standard Package -->
-            <div class="package">
-                <div class="package">
+                    <div class="package">
                         <h3 class="package-title">Standard Package</h3>
                         <p class="package-description">Perfect for growing agencies with a moderate client base.</p>
                         <ul class="package-features">
@@ -119,10 +60,7 @@
                         <p class="package-price">$3000</p>
                         <button class="package-button">Get Started</button>
                     </div>
-            </div>
-            <!-- Premium Package -->
-            <div class="package">
-               <div class="package">
+                    <div class="package">
                         <h3 class="package-title">Premium Package</h3>
                         <p class="package-description">For established agencies seeking top-of-the-line web solutions.</p>
                         <ul class="package-features">
@@ -135,81 +73,65 @@
                         <p class="package-price">$5000</p>
                         <button class="package-button">Get Started</button>
                     </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-        <!-- Testimonials Section -->
+        </section>
         <section id="testimonials" class="section-testimonials">
             <div class="container">
-                <div style="text-align: center;">
-                    <h2 class="section-title-testimonials">Testimonials</h2>
-                    <div class="testimonial">
-                        <blockquote class="testimonial-quote">
-                            <p>"Webstate transformed my online presence and helped me attract more clients than ever before. Their expertise and attention to detail are unmatched."</p>
-                            <cite class="testimonial-author">Michael Johnson, Realtor</cite>
-                        </blockquote>
-                    </div>
-                    <div class="testimonial">
-                        <blockquote class="testimonial-quote">
-                            <p>"I'm extremely impressed with the professionalism and creativity of the Webstate team. They delivered a website that exceeded my expectations and has significantly boosted my business."</p>
-                            <cite class="testimonial-author">Sarah Adams, Broker</cite>
-                        </blockquote>
-                    </div>
+                <h2 class="section-title-testimonials">Testimonials</h2>
+                <div class="testimonial">
+                    <blockquote class="testimonial-quote">
+                        <p>"Webstate transformed my online presence and helped me attract more clients than ever before. Their expertise and attention to detail are unmatched."</p>
+                        <cite class="testimonial-author">Michael Johnson, Realtor</cite>
+                    </blockquote>
+                </div>
+                <div class="testimonial">
+                    <blockquote class="testimonial-quote">
+                        <p>"I'm extremely impressed with the professionalism and creativity of the Webstate team. They delivered a website that exceeded my expectations and has significantly boosted my business."</p>
+                        <cite class="testimonial-author">Sarah Adams, Broker</cite>
+                    </blockquote>
                 </div>
             </div>
         </section>
-        <!-- Contact Section -->
         <section id="contact" class="section-contact">
-       <!-- Video Section -->
-    <section id="video-section" class="video-section">
-        <div id="video-background" class="video-background">
-            <iframe id="video-foreground" src="https://www.youtube.com/embed/vE3BAgh_VAQ?autoplay=1&start=566&end=1136&loop=1&controls=0&disablekb=1&modestbranding=1&mute=1" frameborder="0" allowfullscreen></iframe>
-            <div class="play-button" onclick="playVideo()">
-                <img src="play-button.png" alt="Play Button">
-            </div>
-        </div>
-    </section>
-            <div class="container">
-                <div style="text-align: center;">
-                    <h2 class="section-title-contact">Contact Us</h2>
-                    <form action="https://formspree.io/f/xpzerabv" method="POST" id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required rows="5"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="button">Send Message</button>
-                        </div>
-                    </form>
+            <div class="video-section">
+                <div id="video-overlay" class="video-overlay" data-video="vE3BAgh_VAQ">
+                    <img class="video-thumbnail" src="thumbnail.jpg" alt="Video Thumbnail">
                 </div>
             </div>
-        </section>
+            <div class="container">
+                <h2 class="section-title-contact">Contact Us</h2>
+                <form action="https://formspree.io/f/xpzerabv" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button">Send Message</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <p class="footer-text">&copy; Webstate. All rights reserved 2024.</p>
     </footer>
-    <script>
-        function playVideo() {
-            var video = document.getElementById("video-foreground");
-            video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-            // Hide the play button
-            document.querySelector(".play-button").style.display = "none";
-        }
-    </script>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
