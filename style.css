@@ -697,5 +697,14 @@ background-color: #F3EFFF
     display: flex;
   }
 }
+.vertical-stripe {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 1px); /* Adjust this value to control the width of the stripe */
+    width: 2px; /* Width of the stripe */
+    background-color: #000; /* Color of the stripe */
+    z-index: 9999; /* Ensure the stripe is above other content */
+}
 
     
