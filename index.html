@@ -8,8 +8,7 @@
     <style>.video-section {
     position: relative;
     width: 100%;
-    height: 100vh; /* Adjust as needed */
-    overflow: hidden;
+    height: 100vh;
 }
 
 .video-background {
@@ -18,11 +17,28 @@
     left: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
-#video-foreground {
+.video-foreground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent */
+    z-index: 1;
 }
 </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11103508714"></script>
