@@ -65,3 +65,14 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const videoThumbnails = document.querySelectorAll('.video-thumbnail');
+    
+    videoThumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('mouseover', function () {
+            const newVideoId = this.dataset.video;
+            const videoIframe = document.getElementById('video-foreground');
+            videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1`;
+        });
+    });
+});
