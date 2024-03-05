@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webstate - Premium Real Estate Web Design</title>
-    <link rel="Stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11103508714"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -118,6 +118,8 @@
             </div>
         </section>
         <!-- Contact Section -->
+        <section id="contact" class="section-contact">
+            <div class="container">
                 <div style="text-align: center;">
                     <h2 class="section-title-contact">Contact Us</h2>
                     <form action="https://formspree.io/f/xpzerabv" method="POST" id="contact-form">
@@ -141,11 +143,13 @@
                             <button type="submit" class="button">Send Message</button>
                         </div>
                     </form>
-                    <section id="video-section">
-        <div id="video-background">
-            <iframe id="video-foreground" src="https://www.youtube.com/embed/GWgrDfSxfjY?autoplay=1&start=20&end=35&loop=1&controls=0&mute=1&disablekb=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
-        </div>
                 </div>
+            </div>
+        </section>
+        <!-- Video Section -->
+        <section id="video-section" class="section-video">
+            <div id="video-background">
+                <iframe id="video-foreground" src="https://www.youtube.com/embed/GWgrDfSxfjY?autoplay=1&start=20&end=35&loop=1&controls=0&mute=1&disablekb=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
     </main>
@@ -154,113 +158,7 @@
     </footer>
     <script>
         particlesJS("particles-js", {
-            "particles": {
-                "number": {
-                    "value": 100,
-                    "density": {
-                        "enable": true,
-                        "value_area": 1000
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": false,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 6,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "repulse"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 400,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true
+            // Your particle settings
         });
     </script>
     <script src="script.js"></script>
