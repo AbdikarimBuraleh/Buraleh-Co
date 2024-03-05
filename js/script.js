@@ -87,3 +87,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const videoOverlay = document.getElementById('video-overlay');
+    const newVideoId = videoOverlay.dataset.video;
+    const videoIframe = document.getElementById('video-foreground');
+
+    videoOverlay.addEventListener('click', function () {
+        videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1&start=15&end=35&loop=1`;
+    });
+});
