@@ -1,8 +1,15 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #f8f9fa; /* Light gray */
+    color: #333;
 }
 
 /* Navbar styles */
@@ -58,6 +65,7 @@ body {
     background-color: #333;
     color: white;
     padding: 100px 0;
+    text-align: center;
 }
 
 .hero-title {
@@ -74,6 +82,7 @@ body {
     background: linear-gradient(to right, #f0f0f0, #cfcfcf);
     padding: 80px 0;
     color: #333;
+    text-align: center;
 }
 
 .section-title-about {
@@ -89,6 +98,7 @@ body {
     background: linear-gradient(to bottom, #8B5CF6, #FF6584);
     padding: 80px 0;
     color: white;
+    text-align: center;
 }
 
 .section-title-services {
@@ -166,6 +176,7 @@ body {
 .section-testimonials {
     background-color: #333;
     padding: 80px 0;
+    text-align: center;
 }
 
 .testimonial-quote {
@@ -186,6 +197,7 @@ body {
 .section-contact {
     background-color: #333;
     padding: 80px 0;
+    text-align: center;
 }
 
 .section-title-contact {
