@@ -199,6 +199,19 @@
             // Your particle settings
         });
     </script>
+    <script>
+        // Function to restart the video when it ends
+        function restartVideo() {
+            var video = document.getElementById("video-foreground");
+            video.currentTime = 566; // Start time in seconds
+            video.play();
+        }
+
+        // Listen for the "ended" event of the video
+        document.getElementById("video-foreground").addEventListener("ended", function() {
+            restartVideo();
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
