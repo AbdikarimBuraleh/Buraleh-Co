@@ -335,3 +335,18 @@ body {
 .video-overlay img:hover {
     opacity: 0.8; /* Adjust as needed */
 }
+.package-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.package {
+    width: calc(33.33% - 20px); /* Adjust width based on the number of packages */
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc; /* Add border for better visual separation */
+    padding: 20px; /* Add padding for spacing within the package */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
