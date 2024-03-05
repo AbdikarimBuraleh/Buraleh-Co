@@ -76,3 +76,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const videoThumbnails = document.querySelectorAll('.video-thumbnail');
+    
+    videoThumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function () {
+            const newVideoId = this.dataset.video;
+            const videoIframe = document.getElementById('video-foreground');
+            videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1&start=15&end=35&loop=1`;
+        });
+    });
+});
