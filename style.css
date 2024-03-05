@@ -278,3 +278,24 @@ body {
         width: calc(50% - 20px);
     }
 }
+#video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.video-thumbnail {
+    cursor: pointer;
+    pointer-events: auto;
+    transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover {
+    transform: scale(1.1);
+}
