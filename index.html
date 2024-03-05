@@ -195,11 +195,6 @@
         <p class="footer-text">&copy; Webstate. All rights reserved 2024.</p>
     </footer>
     <script>
-        particlesJS("particles-js", {
-            // Your particle settings
-        });
-    </script>
-    <script>
         // Function to restart the video when it ends
         function restartVideo() {
             var video = document.getElementById("video-foreground");
@@ -210,6 +205,9 @@
         // Listen for the "ended" event of the video
         document.getElementById("video-foreground").addEventListener("ended", function() {
             restartVideo();
+        });
+        particlesJS("particles-js", {
+            // Your particle settings
         });
     </script>
     <script src="script.js"></script>
