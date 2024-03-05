@@ -195,20 +195,12 @@
         <p class="footer-text">&copy; Webstate. All rights reserved 2024.</p>
     </footer>
     <script>
-        // Function to restart the video when it ends
-        function restartVideo() {
+        function playVideo() {
             var video = document.getElementById("video-foreground");
-            video.currentTime = 566; // Start time in seconds
-            video.play();
+            video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+            // Hide the play button
+            document.querySelector(".play-button").style.display = "none";
         }
-
-        // Listen for the "ended" event of the video
-        document.getElementById("video-foreground").addEventListener("ended", function() {
-            restartVideo();
-        });
-        particlesJS("particles-js", {
-            // Your particle settings
-        });
     </script>
     <script src="script.js"></script>
 </body>
