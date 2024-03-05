@@ -5,511 +5,187 @@
     box-sizing: border-box;
 }
 
-/* Body styles */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Light gray */
-    color: #333;
 }
 
-/* Navbar styles */
-.navbar {
-    background-color: #40E0D0; /* Turquoise blue */
-    color: white;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.nav-menu li {
-    margin-left: 20px;
-}
-
-.nav-menu li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-.nav-menu li a:hover {
-    color: #ddd;
-}
-
-/* Hero section styles */
-.hero-section {
+/* Header Styles */
+.header {
     background-color: #333;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.hero-title {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero-subtitle {
-    font-size: 1.5rem;
-}
-
-/* About section styles */
-.section-about {
-    background: linear-gradient(to right, #f0f0f0, #cfcfcf);
-    padding: 80px 0;
-    color: #333;
-    text-align: center;
-}
-
-.section-title-about {
-    font-size: 2.5rem;
-}
-
-.section-description-about {
-    font-size: 1.2rem;
-}
-
-/* Services section styles */
-.section-services {
-    background: linear-gradient(to bottom, #8B5CF6, #FF6584);
-    padding: 80px 0;
-    color: white;
-    text-align: center;
-}
-
-.section-title-services {
-    font-size: 2.5rem;
-    color: white;
-}
-
-.package-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-.package {
-    width: calc(33.33% - 20px); /* Adjust width based on the number of packages */
-    margin: 10px;
-    text-align: center;
-    border: 1px solid #ccc; /* Add border for better visual separation */
-    padding: 20px; /* Add padding for spacing within the package */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
-}
-
-/* Testimonials section styles */
-.section-testimonials {
-    background-color: #333;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.section-title-testimonials {
-    font-size: 2.5rem;
-    color: white;
-}
-
-.testimonial-quote {
-    border: 2px solid white;
-    padding: 20px;
-    color: white;
-    margin-bottom: 30px;
-}
-
-.testimonial-author {
-    display: block;
-    margin-top: 20px;
-    font-style: italic;
-    color: #ddd;
-}
-
-/* Contact section styles */
-.section-contact {
-    background-color: #333;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.section-title-contact {
-    font-size: 2.5rem;
-    color: white;
-}
-
-.video-section {
-    position: relative;
-    overflow: hidden;
-}
-
-#video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.video-overlay img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-overlay img:hover {
-    opacity: 0.8; /* Adjust as needed */
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    font-size: 1.2rem;
-    color: white;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #40E0D0; /* Turquoise blue */
-    border-radius: 5px;
-    background-color: transparent;
-    color: white;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #34C3AA; /* Darker turquoise */
-}
-
-.button {
-    background-color: #40E0D0; /* Turquoise blue */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #34C3AA; /* Darker turquoise */
-}
-
-/* Footer styles */
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+    color: #fff;
     padding: 20px 0;
 }
 
-.footer-text {
-    font-size: 1rem;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .package {
-        width: calc(50% - 20px);
-    }
-}
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Light gray */
-    color: #333;
-}
-
-/* Navbar styles */
-.navbar {
-    background-color: #40E0D0; /* Turquoise blue */
-    color: white;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar-container {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .logo {
     font-size: 1.5rem;
-    font-weight: bold;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+}
+
+.nav-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-menu ul li a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
-.nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.nav-menu li {
-    margin-left: 20px;
-}
-
-.nav-menu li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-.nav-menu li a:hover {
-    color: #ddd;
-}
-
-/* Hero section styles */
-.hero-section {
-    background-color: #333;
-    color: white;
-    padding: 100px 0;
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
     text-align: center;
+    padding: 100px 0;
 }
 
-.hero-title {
+.hero h2 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.hero-subtitle {
-    font-size: 1.5rem;
-}
-
-/* About section styles */
-.section-about {
-    background: linear-gradient(to right, #f0f0f0, #cfcfcf);
-    padding: 80px 0;
-    color: #333;
-    text-align: center;
-}
-
-.section-title-about {
-    font-size: 2.5rem;
-}
-
-.section-description-about {
+.hero p {
     font-size: 1.2rem;
-}
-
-/* Services section styles */
-.section-services {
-    background: linear-gradient(to bottom, #8B5CF6, #FF6584);
-    padding: 80px 0;
-    color: white;
-    text-align: center;
-}
-
-.section-title-services {
-    font-size: 2.5rem;
-    color: white;
-}
-
-.package-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-.package {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    width: calc(33.33% - 40px);
     margin-bottom: 40px;
-    transition: transform 0.3s ease;
 }
 
-.package:hover {
-    transform: translateY(-10px);
-}
-
-.package-title {
-    font-size: 2rem;
-    color: #40E0D0; /* Turquoise blue */
-}
-
-.package-description {
-    font-size: 1.1rem;
-    color: #777;
-    margin-bottom: 20px;
-}
-
-.package-features {
-    list-style: none;
-    margin-bottom: 20px;
-}
-
-.package-features li {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.package-price {
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.package-button {
-    background-color: #40E0D0; /* Turquoise blue */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.package-button:hover {
-    background-color: #34C3AA; /* Darker turquoise */
-}
-
-/* Testimonials section styles */
-.section-testimonials {
-    background-color: #333;
+/* Services Section Styles */
+.services {
+    background-color: #f8f9fa;
     padding: 80px 0;
+}
+
+.services h2 {
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.testimonial-quote {
-    border: 2px solid white;
-    padding: 20px;
-    color: white;
-    margin-bottom: 30px;
+.service {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.testimonial-author {
-    display: block;
-    margin-top: 20px;
-    font-style: italic;
-    color: #ddd;
-}
-
-/* Contact section styles */
-.section-contact {
-    background-color: #333;
+/* Portfolio Section Styles */
+.portfolio {
     padding: 80px 0;
+}
+
+.portfolio h2 {
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.section-title-contact {
-    font-size: 2.5rem;
-    color: white;
-}
-
-.form-container {
+.portfolio-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-.form-group label {
-    font-size: 1.2rem;
-    color: white;
-}
-
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #40E0D0; /* Turquoise blue */
+    border: 2px solid #fff;
     border-radius: 5px;
     background-color: transparent;
-    color: white;
+    color: #fff;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #34C3AA; /* Darker turquoise */
+.form-group textarea {
+    height: 150px;
 }
 
-.button {
-    background-color: #40E0D0; /* Turquoise blue */
-    color: white;
+.form-group button {
+    background-color: #40E0D0;
+    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.button:hover {
-    background-color: #34C3AA; /* Darker turquoise */
+.form-group button:hover {
+    background-color: #34C3AA;
 }
 
-/* Footer styles */
+/* Footer Styles */
 .footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 
-.footer-text {
-    font-size: 1rem;
-}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .package {
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .services h2 {
+        font-size: 2.5rem;
+    }
+
+    .service {
+        width: 80%;
+        margin: 0 auto 40px;
+    }
+
+    .portfolio-item {
         width: calc(50% - 20px);
     }
 }
