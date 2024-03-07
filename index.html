@@ -1,87 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Webstate - Premium Web Design</title>
-    <script>
-        function sendEmail() {
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-            const formData = {
-                name: name,
-                email: email,
-                message: message
-            };
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
 
-            fetch('https://api.emailjs.com/api/v1.0/email/send', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    service_id: 'YOUR_EMAILJS_SERVICE_ID',
-                    template_id: 'YOUR_EMAILJS_TEMPLATE_ID',
-                    user_id: 'YOUR_EMAILJS_USER_ID',
-                    template_params: formData
-                }),
-            })
-            .then(response => {
-                if (response.ok) {
-                    window.location.href = "thankyou.html"; // Redirect to thank you page
-                }
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
-        }
-    </script>
-</head>
-<body>
-    <header class="header">
-        <div class="header-container">
-            <h1 class="logo">Webstate</h1>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Premium Web Design</h2>
-            <p>Crafting Stunning Online Experiences for Your Business</p>
-            <a href="#contact" class="btn">Get Started</a>
-        </div>
-    </section>
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post" class="contact-form" onsubmit="sendEmail(); return false;">
-            <div class="form-group">
-                <input type="text" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" id="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-                <textarea id="message" placeholder="Your Message" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn">Send Message</button>
-            </div>
-        </form>
-    </section>
+.logo {
+    margin: 0;
+    font-size: 24px;
+}
 
-    <footer class="footer">
-        <p>&copy; 2024 Webstate. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Services Section */
+.services {
+    background-color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.service {
+    margin-bottom: 50px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
