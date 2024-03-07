@@ -5,6 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Webstate - Premium Web Design</title>
+    <style>/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+}
+
+.nav-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Services Section Styles */
+.services {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    padding: 80px 0;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.form-group button {
+    background-color: #40E0D0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #34C3AA;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .services h2 {
+        font-size: 2.5rem;
+    }
+
+    .service {
+        width: 80%;
+        margin: 0 auto 40px;
+    }
+
+    .portfolio-item {
+        width: calc(50% - 20px);
+    }
+}</style>
 </head>
 <body>
     <header class="header">
