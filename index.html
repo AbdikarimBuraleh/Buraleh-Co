@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Webstate - Premium Web Design</title>
+    <script>
+        function sendEmail() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            const formData = {
+                name: name,
+                email: email,
+                message: message
+            };
+
+            fetch('https://api.emailjs.com/api/v1.0/email/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    service_id: 'YOUR_EMAILJS_SERVICE_ID',
+                    template_id: 'YOUR_EMAILJS_TEMPLATE_ID',
+                    user_id: 'YOUR_EMAILJS_USER_ID',
+                    template_params: formData
+                }),
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = "thankyou.html"; // Redirect to thank you page
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -28,48 +62,17 @@
         </div>
     </section>
 
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <h3>Web Design</h3>
-            <p>We create beautiful and responsive websites tailored to your brand.</p>
-        </div>
-        <div class="service">
-            <h3>Graphic Design</h3>
-            <p>From logos to branding materials, we help your brand stand out.</p>
-        </div>
-        <div class="service">
-            <h3>SEO Optimization</h3>
-            <p>Improve your website's visibility and attract more visitors.</p>
-        </div>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-        <h2>Our Portfolio</h2>
-        <div class="portfolio-items">
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-            </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-            </div>
-            <div class="portfolio-item">
-                <img src="project3.jpg" alt="Project 3">
-            </div>
-        </div>
-    </section>
-
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <form action="#" method="post" class="contact-form">
+        <form action="#" method="post" class="contact-form" onsubmit="sendEmail(); return false;">
             <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" id="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="email" id="email" placeholder="Your Email" required>
             </div>
             <div class="form-group">
-                <textarea name="message" placeholder="Your Message" required></textarea>
+                <textarea id="message" placeholder="Your Message" required></textarea>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn">Send Message</button>
@@ -80,7 +83,5 @@
     <footer class="footer">
         <p>&copy; 2024 Webstate. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
