@@ -1,138 +1,56 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Handle smooth scrolling for anchor links
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    anchorLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
+'use strict';
 
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
 
-    // Handle form submission
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Here you can add code to handle form submission, e.g., sending data to a server
-            alert('Form submitted successfully!');
-        });
-    }
+/**
+ * navbar toggle
+ */
 
-    // Handle modal functionality
-    const modal = document.getElementById('myModal');
-    const modalBtn = document.getElementById('start-button');
-    const modalCloseBtn = document.getElementsByClassName('close')[0];
+const navOpenBtn = document.querySelector("[data-nav-open-btn]");
+const navbar = document.querySelector("[data-navbar]");
+const navCloseBtn = document.querySelector("[data-nav-close-btn]");
+const overlay = document.querySelector("[data-overlay]");
 
-    if (modalBtn && modalCloseBtn) {
-        modalBtn.onclick = function () {
-            modal.style.display = "block";
-        }
+const elemArr = [navCloseBtn, overlay, navOpenBtn];
 
-        modalCloseBtn.onclick = function () {
-            modal.style.display = "none";
-        }
+for (let i = 0; i < elemArr.length; i++) {
+  elemArr[i].addEventListener("click", function () {
+    navbar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
+}
 
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    }
+/**
+ * toggle navbar & overlay when click any navbar-link
+ */
 
-    // Handle video functionality
-    const videoThumbnails = document.querySelectorAll('.video-thumbnail');
+const navbarLinks = document.querySelectorAll("[data-navbar-link]");
 
-    if (videoThumbnails) {
-        videoThumbnails.forEach(thumbnail => {
-            thumbnail.addEventListener('click', function () {
-                const newVideoId = this.dataset.video;
-                const videoIframe = document.getElementById('video-foreground');
-                videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1&start=15&end=35&loop=1`;
-            });
-        });
-    }
-});
-document.addEventListener('DOMContentLoaded', function () {
-    // Smooth scrolling for anchor links
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    anchorLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
+for (let i = 0; i < navbarLinks.length; i++) {
+  navbarLinks[i].addEventListener("click", function () {
+    navbar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
+}
 
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
 
-    // Form submission handling
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Add code here to handle form submission, e.g., sending data to a server
-            alert('Form submitted successfully!');
-        });
-    }
 
-    // Modal functionality
-    const modal = document.getElementById('myModal');
-    const modalBtn = document.getElementById('start-button');
-    const modalCloseBtn = document.getElementsByClassName('close')[0];
 
-    if (modalBtn && modalCloseBtn) {
-        modalBtn.onclick = function () {
-            modal.style.display = "block";
-        }
+/**
+ * header & go-top-btn active
+ * when window scroll down to 400px
+ */
 
-        modalCloseBtn.onclick = function () {
-            modal.style.display = "none";
-        }
+const header = document.querySelector("[data-header]");
+const goTopBtn = document.querySelector("[data-go-top]");
 
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    }
-
-    // Video functionality
-    const videoThumbnails = document.querySelectorAll('.video-thumbnail');
-
-    if (videoThumbnails) {
-        videoThumbnails.forEach(thumbnail => {
-            thumbnail.addEventListener('click', function () {
-                const newVideoId = this.dataset.video;
-                const videoIframe = document.getElementById('video-foreground');
-                videoIframe.src = `https://www.youtube.com/embed/${newVideoId}?autoplay=1&controls=0&mute=1&disablekb=1&modestbranding=1&start=15&end=35&loop=1`;
-            });
-        });
-    }
-
-    // Example of additional functionality: Toggle menu for mobile devices
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', function () {
-            navMenu.classList.toggle('active');
-        });
-    }
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 400) {
+    header.classList.add("active");
+    goTopBtn.classList.add("active");
+  } else {
+    header.classList.remove("active");
+    goTopBtn.classList.remove("active");
+  }
 });
