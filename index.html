@@ -4,84 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Webstate - Premium Web Design</title>
-    <script>
-        function sendEmail() {
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
-
-            const formData = {
-                name: name,
-                email: email,
-                message: message
-            };
-
-            fetch('https://api.emailjs.com/api/v1.0/email/send', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    service_id: 'YOUR_EMAILJS_SERVICE_ID',
-                    template_id: 'YOUR_EMAILJS_TEMPLATE_ID',
-                    user_id: 'YOUR_EMAILJS_USER_ID',
-                    template_params: formData
-                }),
-            })
-            .then(response => {
-                if (response.ok) {
-                    window.location.href = "thankyou.html"; // Redirect to thank you page
-                }
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
-        }
-    </script>
+    <title>Webstate - Custom UI Design for Realtors</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
         <div class="header-container">
             <h1 class="logo">Webstate</h1>
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
+        <button aria-label="Open Menu"><ion-icon name="menu-outline"></ion-icon></button>
     </header>
-    
+
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>Premium Web Design</h2>
-            <p>Crafting Stunning Online Experiences for Your Business</p>
-            <a href="#contact" class="btn">Get Started</a>
+        <h2>Custom UI Design for Realtors</h2>
+        <p>Enhance Your Real Estate Business with Bespoke UI Solutions</p>
+        <p>From interactive property listings to intuitive customer portals, we design user interfaces that elevate your real estate brand.</p>
+        <a href="#" class="btn">Learn More</a>
+        <img src="hero-banner.jpg" alt="Hero Banner">
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>Why Choose Webstate</h2>
+        <p>At Webstate, we understand the unique challenges of the real estate industry. Our team combines expertise in design and technology to deliver tailored solutions that drive results.</p>
+        <p>With a focus on innovation and user experience, we help realtors stand out in a competitive market and connect with their audience effectively.</p>
+        <div class="stats">
+            <div class="stat">
+                <h3>9875</h3>
+                <p>Satisfied Clients</p>
+            </div>
+            <div class="stat">
+                <h3>7894</h3>
+                <p>Projects Launched</p>
+            </div>
+            <div class="stat">
+                <h3>65</h3>
+                <p>Years Completed</p>
+            </div>
+        </div>
+        <img src="about-banner.jpg" alt="About Banner">
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <h2>Our Specialization</h2>
+        <div class="service">
+            <ion-icon name="telescope-outline"></ion-icon>
+            <h3>Strategy & Research</h3>
+            <p>Gain insights into market trends and customer behavior to inform your real estate strategy.</p>
+        </div>
+        <div class="service">
+            <ion-icon name="desktop-outline"></ion-icon>
+            <h3>Web Development</h3>
+            <p>Build robust online platforms that showcase your listings and engage potential buyers.</p>
+        </div>
+        <div class="service">
+            <ion-icon name="globe-outline"></ion-icon>
+            <h3>Web Solution</h3>
+            <p>Provide seamless user experiences across devices with responsive web solutions.</p>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post" class="contact-form" onsubmit="sendEmail(); return false;">
-            <div class="form-group">
-                <input type="text" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" id="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-                <textarea id="message" placeholder="Your Message" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn">Send Message</button>
-            </div>
-        </form>
+    <!-- FEATURES -->
+    <section class="features">
+        <h2>Our Features</h2>
+        <div class="feature">
+            <ion-icon name="bulb-outline"></ion-icon>
+            <h3>Idea & Analysis</h3>
+            <p>Collaborate with our team to conceptualize innovative solutions tailored to your real estate needs.</p>
+        </div>
+        <div class="feature">
+            <ion-icon name="color-palette-outline"></ion-icon>
+            <h3>Designing</h3>
+            <p>Transform your vision into visually stunning interfaces that captivate your audience.</p>
+        </div>
+        <div class="feature">
+            <ion-icon name="code-slash-outline"></ion-icon>
+            <h3>Development</h3>
+            <p>Bring your UI designs to life with our expert development services and cutting-edge technologies.</p>
+        </div>
+        <div class="feature">
+            <ion-icon name="rocket-outline"></ion-icon>
+            <h3>Testing & Launching</h3>
+            <p>Ensure the success of your digital solutions with comprehensive testing and seamless deployment.</p>
+        </div>
+        <img src="features-banner.jpg" alt="Features Banner">
     </section>
+    <!-- BLOG -->
+<section class="section blog" id="blog">
+    <div class="container">
 
-    <footer class="footer">
-        <p>&copy; 2024 Webstate. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <h2 class="h2 section-title underline">Our Blog & News</h2>
+
+        <ul class="blog-list">
+
+            <li>
+                <div class="blog-card">
+
+                    <figure class="banner">
+                        <a href="#">
+                            <img src="./assets/images/blog-1.jpg" width="750" height="350" loading="lazy"
+                                alt="Discover the latest trends in real estate UI design." class="img-cover">
+                        </a>
+                    </figure>
+
+                    <div class="content">
+
+                        <h3 class="h3 title">
+                            <a href="#">
+                                Discover the latest trends in real estate UI design.
+                            </a>
+                        </h3>
+
+                        <p class="text">
+                            Stay updated with our insights on real estate UI design trends and user experience
+                            improvements.
+                        </p>
+
+                        <div class="meta">
+
+                            <div class="publish-date">
+                                <ion-icon name="time-outline"></ion-icon>
+
+                                <time datetime="2022-03-07">7 March, 2024</time>
+                            </div>
+
+                            <button class="comment" aria-label="Comment">
+                                <ion-icon name="chatbubble-outline"></ion-icon>
+
+                                <data value="15">15</data>
+                            </button>
+
+                            <button class="share" aria-label="Share">
+                                <ion-icon name="share-social-outline"></ion-icon>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </li>
+
+            <!-- Add more blog entries here -->
+
+        </ul>
+
+    </div>
+</section>
