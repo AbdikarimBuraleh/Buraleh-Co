@@ -1,9 +1,7 @@
-'use strict';
-
-
+"use strict";
 
 /**
- * navbar toggle
+ * Navbar toggle
  */
 
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
@@ -21,7 +19,7 @@ for (let i = 0; i < elemArr.length; i++) {
 }
 
 /**
- * toggle navbar & overlay when click any navbar-link
+ * Toggle navbar & overlay when click any navbar-link
  */
 
 const navbarLinks = document.querySelectorAll("[data-navbar-link]");
@@ -33,12 +31,8 @@ for (let i = 0; i < navbarLinks.length; i++) {
   });
 }
 
-
-
-
-
 /**
- * header & go-top-btn active
+ * Header & go-top-btn active
  * when window scroll down to 400px
  */
 
