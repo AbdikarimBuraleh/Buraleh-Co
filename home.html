@@ -26,12 +26,13 @@
             margin-top: 30px; /* Adjust margin as needed */
         }
 
-        .video-container iframe {
+        .video-container video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+            object-fit: cover; /* Ensure video covers entire container */
         }
     </style>
 </head>
@@ -62,6 +63,19 @@
         </div>
     </section>
 
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="White Modern Gaming Video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    <!-- End of Video Section -->
+
     <section class="hero" id="home">
         <div class="container">
             <h2>About</h2>
@@ -70,16 +84,6 @@
                 tirelessly to bring your vision to life.</p></h2>
         </div>
     </section>
-
-    <!-- Video Section -->
-    <section class="video-section">
-        <div class="container">
-            <div class="video-container">
-                <iframe src="https://www.canva.com/design/DAF_K8xpMIo/3uv9IDuJgcpiEqu5rpx6VA/embed?utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" frameborder="0"></iframe>
-            </div>
-        </div>
-    </section>
-    <!-- End of Video Section -->
 
     <!-- Add more sections as needed -->
 
