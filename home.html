@@ -6,103 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webstate - Home</title>
     <style>
-        /* Reset CSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f8f8f8;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header Styles */
-        .header {
-            background-color: #ffffff;
-            padding: 20px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo {
-            text-decoration: none;
-            color: #333;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .logo img {
-            vertical-align: middle;
-            margin-right: 10px;
-        }
-
-        .nav-open-btn {
-            display: none;
-        }
-
-        /* Hero Section Styles */
-        .hero {
-            padding: 100px 0;
-            text-align: center;
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
-            background-size: cover;
-            color: #fff;
-        }
-
-        .hero-title {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-
-        .hero-text {
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
-
-        /* About Section Styles */
-        .about {
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .about-text {
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
-
-        /* Button Styles */
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #4CAF50;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #45a049;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .nav-open-btn {
-                display: block;
-            }
-
-            .navbar {
-                display: none;
-            }
+        /* Paste the provided CSS here */
+        :root {
+            /**
+             * colors
+             */
+            --st-patricks-blue: hsl(236, 57%, 28%);
+            --amaranth-purple: hsl(335, 88%, 38%);
+            --royal-blue-dark: hsl(231, 68%, 21%);
+            --chrome-yellow: hsl(39, 100%, 52%);
+            --space-cadet-1: hsl(230, 41%, 25%);
+            --space-cadet-2: hsl(230, 59%, 16%);
+            --winter-sky_50: hsla(335, 87%, 53%, 0.5);
+            --purple-navy: hsl(236, 26%, 43%);
+            --ksu-purple: hsl(275, 54%, 33%);
+            --winter-sky: hsl(335, 87%, 53%);
+            --razzmatazz: hsl(335, 87%, 51%);
+            --platinum: hsl(0, 0%, 90%);
+            --black_70: hsla(0, 0%, 0%, 0.7);
+            --rajah: hsl(29, 99%, 67%);
+            --white: hsl(0, 0%, 100%);
+            --gradient-1: linear-gradient(90deg, var(--royal-blue-dark) 0, var(--ksu-purple) 51%, var(--royal-blue-dark));
+            --gradient-2: linear-gradient(90deg, var(--razzmatazz), var(--rajah));
+            /**
+             * typography
+             */
+            --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
+            --ff-poppins: 'Poppins', sans-serif;
+            --fs-1: 4.2rem;
+            --fs-2: 3.8rem;
+            --fs-3: 3.2rem;
+            --fs-4: 2.5rem;
+            --fs-5: 2.4rem;
+            --fs-6: 2rem;
+            --fs-7: 1.8rem;
+            --fs-8: 1.5rem;
+            --fw-500: 500;
+            --fw-600: 600;
+            --fw-700: 700;
+            /**
+             * border radius
+             */
+            --radius-4: 4px;
+            --radius-12: 12px;
+            /**
+             * spacing
+             */
+            --section-padding: 60px;
+            /**
+             * transition
+             */
+            --transition-1: 0.15s ease;
+            --transition-2: 0.35s ease;
+            --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+            --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
+            /**
+             * shadow
+             */
+            --shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
         }
     </style>
 </head>
