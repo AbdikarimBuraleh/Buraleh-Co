@@ -18,15 +18,15 @@
         }
 
         /* Styling for the video container */
-        .video-container {
+        .video-section {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio (modify as needed) */
+            height: calc(100vh - 100px); /* Adjust height as needed */
             overflow: hidden;
-            margin-top: 30px; /* Adjust margin as needed */
+            margin-top: -50px; /* Adjust margin to position the video higher */
         }
 
-        .video-container video {
+        .video-section video {
             position: absolute;
             top: 0;
             left: 0;
@@ -65,14 +65,10 @@
 
     <!-- Video Section -->
     <section class="video-section">
-        <div class="container">
-            <div class="video-container">
-                <video autoplay loop muted>
-                    <source src="White Modern Gaming Video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
+        <video autoplay loop muted>
+            <source src="White Modern Gaming Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </section>
     <!-- End of Video Section -->
 
