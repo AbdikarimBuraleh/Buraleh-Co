@@ -5,106 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webstate - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .nav-open-btn {
+            display: none;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
+            background-size: cover;
+            color: #fff;
+        }
+
+        .hero-title {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        /* About Section Styles */
+        .about {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .about-text {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-open-btn {
+                display: block;
+            }
+
+            .navbar {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header class="header" data-header>
+    <header class="header">
         <div class="container">
-
-            <div class="overlay" data-overlay></div>
-
-            <a href="logo.png" class="logo">
+            <a href="index.html" class="logo">
                 <img src="logo.png" alt="Webstate" width="30" height="30">
-                Premium Website Design for Realtors
+                Webstate
             </a>
-
-            <nav class="navbar" data-navbar>
-
-                <ul class="navbar-list">
-
-                    <li class="navbar-item">
-                        <a href="home.html" class="navbar-link" data-navbar-link>Home</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#about" class="navbar-link" data-navbar-link>About</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#services" class="navbar-link" data-navbar-link>Services</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#features" class="navbar-link" data-navbar-link>Features</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#contact" class="navbar-link" data-navbar-link>Contact</a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-            <a href="#" class="btn">
-                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                <span>Get A Quote</span>
-            </a>
-
-            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <button class="nav-open-btn" aria-label="Open Menu">
                 <ion-icon name="menu-outline"></ion-icon>
             </button>
-
         </div>
+        <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link" data-navbar-link>Home</a>
+                    </li>
+
+</ul>
     </header>
 
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-subtitle">Welcome to Webstate</div>
-                <h1 class="hero-title">Premium Website Design for Realtors</h1>
-                <p class="hero-text">Elevate your real estate business with stunning, customized websites tailored
-                    specifically for realtors.</p>
-                <a href="#" class="btn">Get Started</a>
-            </div>
+            <h1 class="hero-title">Premium Website Design for Realtors</h1>
+            <p class="hero-text">Elevate your real estate business with stunning, customized websites tailored
+                specifically for realtors.</p>
+            <a href="#" class="btn">Get Started</a>
         </div>
     </section>
 
     <section class="about">
         <div class="container">
-            <div class="section-title">About Us</div>
-            <div class="underline"></div>
+            <h2>About Us</h2>
             <p class="about-text">At Webstate, we specialize in crafting high-quality websites designed to showcase
                 your properties and services effectively. Our team of experienced developers and designers work
                 tirelessly to bring your vision to life.</p>
-            <div class="stats-list">
-                <div class="stats-card">
-                    <div class="stats-title">100+</div>
-                    <div class="stats-text">Satisfied Clients</div>
-                </div>
-                <div class="stats-card">
-                    <div class="stats-title">500+</div>
-                    <div class="stats-text">Projects Completed</div>
-                </div>
-                <div class="stats-card">
-                    <div class="stats-title">10+</div>
-                    <div class="stats-text">Years of Experience</div>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- Add more sections as needed -->
 
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
-    <script src="scripts.js"></script>
 </body>
 
 </html>
-
